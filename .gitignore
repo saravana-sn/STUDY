@@ -1,5 +1,5 @@
-.DS_Store
-*.iml
-.idea/
-.vscode/
-*.exe
+**/.DS_Store
+**/*.iml
+**/.idea/
+**/.vscode/
+**/*.exe
