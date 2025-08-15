@@ -1,0 +1,141 @@
+/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java --enable-preview -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57304 -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/me/Developer/STUDY/Java/out/production/STUDY Projects.PetCare.PetCare
+File pets.ser not found. starting fresh.
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+1
+Enter pet ID:
+1
+Enter pet name:
+Tommy
+Enter pet breed:
+Kutta
+Enter pet age:
+36
+Enter pet Owner's name:
+pawry
+Enter pet Owner's contact:
+69
+Pet ID 1 has been registered successfully on2025-08-15
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+1
+Enter pet ID:
+2
+Enter pet name:
+SHiro
+Enter pet breed:
+Persian
+Enter pet age:
+4
+Enter pet Owner's name:
+ShinChan
+Enter pet Owner's contact:
+44
+Pet ID 2 has been registered successfully on2025-08-15
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+1
+Enter pet ID:
+3
+Enter pet name:
+Doraemon
+Enter pet breed:
+robot
+Enter pet age:
+99
+Enter pet Owner's name:
+Nobita
+Enter pet Owner's contact:
+99
+Pet ID 3 has been registered successfully on2025-08-15
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+2
+Enter your pet ID:
+2
+Enter your Appointment Type:
+visit
+Enter your Appointment Date(format:dd/MM/yyyy):
+24/08/2025
+Enter your Appointment StartTime(format:HH:mm):
+10:00
+Enter your Appointment EndTime(format:HH:mm):
+11:00
+Enter optional notes:
+hehe ab me itna bhi khaas nhi
+Appointment has been scheduled successfully
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+2
+Enter your pet ID:
+3
+Enter your Appointment Type:
+grooming
+Enter your Appointment Date(format:dd/MM/yyyy):
+16/08/2025
+Enter your Appointment StartTime(format:HH:mm):
+13:00
+Enter your Appointment EndTime(format:HH:mm):
+15:00
+Enter optional notes:
+gadget dedo
+Appointment has been scheduled successfully
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+3
+Registered Pets:
+1: Tommy | Kutta | 36 | 2025-08-15 | pawry | 69
+2: SHiro | Persian | 4 | 2025-08-15 | ShinChan | 44
+3: Doraemon | robot | 99 | 2025-08-15 | Nobita | 99
+Enter any pet ID to show its appointments:
+2
+All appointments of SHiro:
+Appointment: visit | 2025-08-24 | 10:00 - 11:00 |
+All upcoming appointments:
+1 | Tommy
+2 | SHiro
+Appointment: visit | 2025-08-24 | 10:00 - 11:00 |
+3 | Doraemon
+Appointment: grooming | 2025-08-16 | 13:00 - 15:00 |
+All Past Appointments:
+1 | Tommy
+2 | SHiro
+3 | Doraemon
+
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+4
+Pets with upcoming appointments in the next week:
+Doraemon
+Pets overdue for a vet visit:
+
+Press 1 to register a new pet
+2 for scheduling an appointment
+3 for Display Records
+4 to generate reports
+5 to save and exit
+5
+Saved at pets.ser successfully! GoodBye!
+
+Process finished with exit code 0
