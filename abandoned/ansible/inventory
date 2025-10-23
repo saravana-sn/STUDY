@@ -1,0 +1,5 @@
+[vm]
+fedora ansible_host=192.168.0.114 ansible_user=saravana ansible_password=7869
+
+[dev]
+172.25.250.[10:11]

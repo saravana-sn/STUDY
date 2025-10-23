@@ -1,0 +1,10 @@
+custom:
+  development:
+    user: kunal
+    group: admin
+  production:
+    user: nitesh
+    group: devops
+  testing:
+    user: tamanna
+    group: fog

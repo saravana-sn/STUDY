@@ -1,0 +1,9 @@
+---
+- name: My First play
+  hosts: vm, localhost
+  tasks:
+    - name: ping
+      ping:
+    - name: Hello World
+      debug: 
+        msg: Hello World
