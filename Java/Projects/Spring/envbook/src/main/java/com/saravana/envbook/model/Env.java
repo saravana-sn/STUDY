@@ -1,7 +1,9 @@
 package com.saravana.envbook.model;
 
+import java.io.Serializable;
+
 // Env POJO
-public class Env {
+public class Env implements Serializable {
     private Long id;
     private String name;
     private String description;
