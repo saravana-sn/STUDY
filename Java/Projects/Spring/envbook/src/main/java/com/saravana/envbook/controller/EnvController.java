@@ -1,34 +1,34 @@
 package com.saravana.envbook.controller;
 
 import com.saravana.envbook.model.Env;
-import com.saravana.envbook.service.EnvPersistanceService;
+import com.saravana.envbook.service.EnvPersistenceService;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @RestController
 @RequestMapping("/env")
 public class EnvController {
     private static Map<Long, Env> envMap = new HashMap<>();
+    private final EnvPersistenceService envPersistenceService;
 
     @Autowired
-    EnvPersistanceService envPersistanceService;
+    public EnvController(EnvPersistenceService envPersistenceService) {
+        this.envPersistenceService = envPersistenceService;
+    }
 
     @PostConstruct
     public void init() {
-        envMap = envPersistanceService.loadEnvMapFromFile();
+        envMap = envPersistenceService.loadEnvMapFromFile();
     }
 
     @PreDestroy
     public void end(){
-        envPersistanceService.saveEnvMapToFile(envMap);
+        envPersistenceService.saveEnvMapToFile(envMap);
     }
 
     @PutMapping
@@ -42,18 +42,18 @@ public class EnvController {
         return new ArrayList<>(envMap.values());
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public Env getEnvById(@PathVariable Long id) {
         return envMap.get(id);
     }
 
-    @PostMapping("{id}")
+    @PostMapping("/{id}")
     public boolean updateEnv(@PathVariable Long id, @RequestBody Env env) {
         envMap.put(id, env);
         return true;
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public boolean deleteEnv(@PathVariable Long id) {
         envMap.remove(id);
         return true;

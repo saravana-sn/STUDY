@@ -9,12 +9,13 @@ import java.util.*;
 
 // Provide data persistence using a serialized Object file (env.ser)
 @Service
-public class EnvPersistanceService {
+public class EnvPersistenceService {
     @SuppressWarnings("unchecked")
     public Map<Long,Env> loadEnvMapFromFile() {
         Map<Long,Env> envMap = new HashMap<>();
         try(ObjectInputStream in = new ObjectInputStream( new FileInputStream("env.ser"))){
             envMap =  (Map<Long, Env>) in.readObject();
+            System.out.println("Data successfully persisted from file!");
         }catch (FileNotFoundException e){
             System.out.println("File env.ser not found. starting fresh.");
         }catch (IOException | ClassNotFoundException e){
